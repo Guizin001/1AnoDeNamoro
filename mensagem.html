@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva algo para nós!</title>
+    <link rel="stylesheet" href="main/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escreva algo para o nosso 1º ano de namoro!</h1>
+        <textarea id="mensagem" rows="10" placeholder="Escreva aqui..."></textarea>
+        <br>
+        <button onclick="guardarMensagem()">Enviar Mensagem</button>
+        <br><br>
+        <a href="index.html"><button>Voltar para o Quiz</button></a>
+    </div>
+
+    <script>
+        // Função para "salvar" a mensagem. Aqui podemos apenas fazer um alerta ou armazenar de alguma forma.
+        function guardarMensagem() {
+            let mensagem = document.getElementById('mensagem').value;
+            if (mensagem.trim() === '') {
+                alert('Por favor, escreva algo antes de enviar!');
+            } else {
+                alert('Mensagem recebida! Obrigado, agora e minha vez de escrever');
+                // Aqui poderia enviar a mensagem para algum servidor ou armazená-la localmente.
+                // Simplesmente vamos limpar o textarea por enquanto.
+                document.getElementById('mensagem').value = '';
+                window.location.href = 'minha.html';  // Redireciona para minha.html
+            }
+        }
+    </script>
+</body>
+</html>

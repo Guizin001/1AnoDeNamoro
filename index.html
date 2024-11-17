@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de 1 Ano de Namoro</title>
+    <link rel="stylesheet" href="main/style.css">
+</head>
+<body>
+    <div class="container" id="quiz-container">
+        <h1>Quiz de 1 Ano de Namoro</h1>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question-1">
+            <p>Qual é a minha cor Favorita?</p>
+            <button onclick="nextQuestion(1, 1)">Azul</button>
+            <button onclick="nextQuestion(1, 2)">Preto</button>
+            <button onclick="nextQuestion(1, 3)">Branco</button>
+            <button onclick="nextQuestion(1, 3)">Roxo</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question-2" style="display: none;">
+            <p>Qual dessas series e a minha preferida?</p>
+            <button onclick="nextQuestion(2, 1)">Supernatural</button>
+            <button onclick="nextQuestion(2, 2)">Lucifer</button>
+            <button onclick="nextQuestion(2, 3)">Jovens Titans</button>
+            <button onclick="nextQuestion(2, 4)">Grey's Anatomy</button>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question" id="question-3" style="display: none;">
+            <p>Qual desses filmes iremos assistir juntinhos?</p>
+            <button onclick="nextQuestion(3, 1)">Invocação do Mal 1</button>
+            <button onclick="nextQuestion(3, 2)">Invocação do Mal 2</button>
+            <button onclick="nextQuestion(3, 3)">Invocação do Mal 3</button>
+            <button onclick="nextQuestion(3, 4)">Invocação do Mal 4</button>
+            <button onclick="nextQuestion(3, 5)">Todas as respostas acima</button>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question" id="question-4" style="display: none;">
+            <p>Qual é o meu dia da semana favorito?</p>
+            <button onclick="nextQuestion(4, 1)">Segunda-feira</button>
+            <button onclick="nextQuestion(4, 2)">Sexta-feira</button>
+            <button onclick="nextQuestion(4, 3)">Sábado</button>
+            <button onclick="nextQuestion(4, 4)">Domingo</button>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="question" id="question-5" style="display: none;">
+            <p>Qual o meu maior sonho?</p>
+            <button onclick="nextQuestion(5, 1)">Ser Pai(Depois dos 24)</button>
+            <button onclick="nextQuestion(5, 2)">Viajar o mundo</button>
+            <button onclick="nextQuestion(5, 3)">Casar e formar uma família</button>
+            <button onclick="nextQuestion(5, 4)">Ser feliz e realizada pessoalmente</button>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div class="question" id="question-6" style="display: none;">
+            <p>Qual é o lugar que eu mais odeio?</p>
+            <button onclick="nextQuestion(6, 1)">Supermercado</button>
+            <button onclick="nextQuestion(6, 2)">Academias</button>
+            <button onclick="nextQuestion(6, 3)">Lojas de móveis</button>
+            <button onclick="nextQuestion(6, 4)">Qualquer lugar com muita gente</button>
+        </div>
+
+        <!-- Pergunta 7 -->
+        <div class="question" id="question-7" style="display: none;">
+            <p>Quem falou "Eu te amo" primeiro?</p>
+            <button onclick="nextQuestion(7, 1)">Mim</button>
+            <button onclick="nextQuestion(7, 2)">Ocê</button>
+        </div>
+
+        <!-- Pergunta 8 -->
+        <div class="question" id="question-8" style="display: none;">
+            <p>Qual é a minha comida preferida?</p>
+            <button onclick="nextQuestion(8, 1)">Pizza</button>
+            <button onclick="nextQuestion(8, 2)">Sushi</button>
+            <button onclick="nextQuestion(8, 3)">Hambúrguer</button>
+            <button onclick="nextQuestion(8, 4)">Churrasco</button>
+        </div>
+
+        <!-- Pergunta 9 -->
+        <div class="question" id="question-9" style="display: none;">
+            <p>Qual é o meu hobby favorito?</p>
+            <button onclick="nextQuestion(9, 1)">Ler</button>
+            <button onclick="nextQuestion(9, 2)">Dançar</button>
+            <button onclick="nextQuestion(9, 3)">Cozinhar</button>
+            <button onclick="nextQuestion(9, 4)">Encher o saco</button>
+        </div>
+
+        <!-- Pergunta 10 -->
+        <div class="question" id="question-10" style="display: none;">
+            <p>Qual seria o destino dos sonhos para nós viajar?</p>
+            <button onclick="nextQuestion(10, 1)">Paris</button>
+            <button onclick="nextQuestion(10, 2)">EUA</button>
+            <button onclick="nextQuestion(10, 3)">Pa minha casa</button>
+            <button onclick="nextQuestion(10, 4)">Maldivas</button>
+        </div>
+
+        <!-- Pergunta 11 -->
+        <div class="question" id="question-11" style="display: none;">
+            <p>Ta bom de perguntas já ne?</p>
+            <button onclick="finishQuiz()">Sim</button>
+            <button onclick="finishQuiz()">Não Continua</button>
+        </div>
+    </div>
+
+    <script src="main/script.js"></script>
+</body>
+</html>

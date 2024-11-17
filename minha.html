@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Especial para Você</title>
+    <link rel="stylesheet" href="main/style2.css">
+</head>
+<body>
+    <!-- Áudio de fundo -->
+    <audio id="background-music" autoplay loop>
+        <source src="main/musica.m4a" type="audio/mp3"> <!-- Substitua pelo caminho da sua música -->
+        Seu navegador não suporta o áudio.
+    </audio>
+
+    <div class="message-container">
+        <h1 class="title">Minha Mensagem para Você ❤️</h1>
+        
+        <!-- Seção de mensagens pessoais -->
+        <div class="message-content">
+            <p class="message-label">
+                Oie Cabeçuda <br>
+                Hoje celebramos um ano de nós, e ao olhar para trás, é impossível não me emocionar com tudo o que vivemos juntos até aqui. Parece que foi ontem que nos conhecemos, mas, ao mesmo tempo, sinto como se já tivesse te conhecido a vida inteira. Cada risada, cada palavra trocada entre nós tem sido uma construção do nosso amor, e sou grato por cada momento que passamos juntos. Em um ano, aprendemos tanto um sobre o outro. Com você, aprendi a ser mais paciente, a me importar de uma forma mais profunda, a valorizar os pequenos momentos (Mesmo eu sendo esquecidinho). Mas, acima de tudo, aprendi a amar de uma maneira verdadeira, sem reservas, sem medos. Você me ensina todos os dias o que é o amor de verdade, e a cada novo dia ao seu lado, meu coração cresce ainda mais cheio de alegria e gratidão por ter você.
+                Lembro das nossas primeiras conversas, das nossas madrugadas de jogatinas, das risadas e até dos nossos pequenos conflitos, que sempre terminam em brincadeiras. Cada passo que damos juntos só me faz ter mais certeza de que somos feitos um para o outro.
+                Quando penso no futuro, meu coração se enche de esperança e felicidade, porque sei que quero viver tudo isso com você. Cada plano, cada sonho, cada conquista. Quero estar ao seu lado em todas as etapas, crescendo, aprendendo, e criando novas memórias juntos.
+                Esse primeiro ano foi apenas o começo da nossa jornada, e eu mal posso esperar por tudo o que ainda vamos viver. Obrigado por ser minha pessoa favorita no mundo, por me apoiar, por me fazer rir, por ser minha paz e meu refúgio. Você é o meu tudo, e não consigo imaginar minha vida sem você. <br><br>
+                <h1>Feliz 1 ano de namoro, meu amor. Te amo mais do que palavras podem expressar. 💖</h1>
+            </p>
+            
+            <!-- Contêiner do botão e controle de volume -->
+            <div class="button-volume-container">
+                <button class="submit-btn" onclick="submitMessage()">Voltar ao Quiz</button>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" onchange="adjustVolume()">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitMessage() {
+            alert("Eu te amo minha gatinha! ❤️");
+            window.location.href = 'index2.html';  // Redireciona para index2.html
+        }
+
+        function adjustVolume() {
+            const audio = document.getElementById('background-music');
+            const volume = document.getElementById('volume-slider').value;
+            audio.volume = volume;  // Ajusta o volume do áudio
+        }
+    </script>
+</body>
+</html>

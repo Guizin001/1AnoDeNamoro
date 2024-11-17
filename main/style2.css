@@ -1,0 +1,106 @@
+/* Reseta o estilo da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Faz o body ocupar toda a altura da tela e usa flexbox para centralizar o conteúdo */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px; /* Adiciona uma margem ao redor da tela */
+}
+
+/* Contêiner da mensagem */
+.message-container {
+    text-align: center;
+    background-color: white;
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px;
+    width: 100%;
+    max-width: 800px; /* Limita o tamanho máximo da caixa */
+    margin: 20px; /* Adiciona uma margem em torno da caixa */
+}
+
+/* Título */
+.title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo da mensagem */
+.message-content {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Botão */
+.submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff7b7b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ff5050;
+}
+
+.submit-btn:active {
+    background-color: #cc2e2e;
+}
+
+/* Contêiner do botão e volume slider */
+.button-volume-container {
+    display: flex;
+    justify-content: space-between; /* Espalha os elementos */
+    align-items: center;
+    width: 100%; /* Garantir que ocupe toda a largura disponível */
+    margin-top: 20px;
+}
+
+/* Estilo do slider de volume */
+#volume-slider {
+    -webkit-appearance: none;
+    width: 150px; /* Largura do slider */
+    height: 8px;
+    background: #ddd; /* Cor de fundo da barra */
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estilo do "thumb" (a parte do controle deslizante) */
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%; /* Torna o thumb circular */
+    background: #ff7b7b; /* Cor do thumb */
+    cursor: pointer;
+}
+
+/* Estilo para o Firefox */
+#volume-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff7b7b;
+    cursor: pointer;
+}

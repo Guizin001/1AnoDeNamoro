@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff5050;
+}
+
+/* Perguntas e Botões */
+.question {
+    display: block; /* As perguntas ficam visíveis */
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff5050;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc2e2e;
+}
+
+/* Botão de finalização e redirecionamento */
+#finish-button {
+    display: none;
+    margin-top: 20px;
+}
+
+#finish-button button {
+    background-color: #32cd32;
+    padding: 12px 25px;
+    font-size: 18px;
+}
+
+/* Estilos da página de mensagem (mensagem.html) */
+textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    resize: vertical;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+button, a button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #ff5050;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover, a button:hover {
+    background-color: #cc2e2e;
+}
+
+/* Estilos para quando a tela é pequena (responsivo) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button, a button {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
