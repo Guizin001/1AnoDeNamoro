@@ -1,3 +1,7 @@
+## Preview do site
+https://1denos.netlify.app/
+
+
 ## Olá, meu nome é Guilherme Taicico!
 
 - 🎓 Estudando Análise e Desenvolvimento de Sistemas na Unicsul.
